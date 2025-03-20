@@ -1,4 +1,4 @@
-# SwiftUI Bootcamp - Document
+ # SwiftUI Bootcamp - Document
 
 ## Day 1
 
@@ -47,3 +47,27 @@ Literals değişkenler için kullanılan değerlerin nasıl yazılması gerekti�
 
 #### White Space - Beyaz Boşluk
 Kodlama yaparken daha düzenli görünmesi için Swift boşluk bırakmamızı istemektedir.
+
+#### print() Metdou ile Çıktı Alma
+Diğer diller gibi print ve println ayrımı yoktur. Varsayılan olarak println gibi çalışır. Yani alt alta yazar. <br></br>
+*Örnek:* 
+- print("Merhaba") // Merhaba
+- print(1.0, 2.0, 3.0) // 1.0 2.0 3.0
+- print(1.0, 2.0, 3.0, separator: "-") // 1.0-2.0-3.0 <br></br>
+separator ifadelerin aralarına istenilen ifadeyi yerleştirmemize yarar.
+
+#### Değişkenleri Yazdırma
+String ifade içine *\()* ifadesi kullanılarak çıktıya değişken eklenebilir.
+```swift
+var ad = "Sümeyye"
+var yil = 11
+print("\(ad) Manisada \(yil) yıldır yaşamaktadır.")
+```
+Sümeyye Manisada 11 yıldır yaşamaktadır.<br></br>
+**NOT** -> Oluşturduğunuz değişkene farklı türde değişken atayamazsınız.<br></br>
+**Not** -> Süslü parantez *{}* bizim kapsamımızı belirler. Değişkenin ulaşılabilirliği buna bağlıdır.
+
+#### Constant - Sabitler
+*let*, sabitler içerisine bir kere veri atıldığında bir daha değiştiremeyceğimiz yapılardır. let olan değişkene daha sonra değer atanmaz.
+
+#### Kaçış Karakterleri
